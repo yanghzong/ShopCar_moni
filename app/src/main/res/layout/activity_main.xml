@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+   <ExpandableListView
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/el_shop"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/dp_40">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_all"
+            android:layout_centerVertical="true"
+            android:text="全选"/>
+
+        <TextView
+            android:layout_toRightOf="@id/cb_all"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_height="wrap_content"
+            android:text="总价:"
+            android:textSize="@dimen/sp_16"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_allprice"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/tv_allnum"
+            android:text="去结算"
+            android:gravity="center"
+            android:textSize="@dimen/sp_18"
+            android:textColor="#666666"
+            android:background="#ef5df7"/>
+    </RelativeLayout>
+
+</LinearLayout>
